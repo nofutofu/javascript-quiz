@@ -99,7 +99,30 @@ button:hover {
     left: 55px;
 }
 
-@media (max-width: 1000px) {
+
+@media (max-width: 1440px) {
+    header,
+    #leaderboard,
+    .body,
+    #footer,
+    #initial,
+    .questionBtn{
+        font-size: 25px;
+    }
+    .title{
+        font-size: 45px;
+        padding-top: 30px;
+    }
+    #initial{
+        width: 10%;
+    }
+    .questionBtn{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 900px) {
     header,
     #leaderboard,
     .body,
@@ -116,6 +139,12 @@ button:hover {
         width: 10%;
     }
     .questionBtn{
-        width: 70%;
+        width: 82%;
+    }
+    .back{
+        right:115px;
+    }
+    .clear {
+        left: 45px;
     }
 }

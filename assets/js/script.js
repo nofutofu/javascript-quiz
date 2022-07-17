@@ -57,10 +57,10 @@ function startQuiz() {
         mainEl.children('ul').children('li').children().eq(3).val('3')
         addChoices = false;
     }else if (questionNum === 3 && addChoices === true) {
-        mainEl.children().eq(0).text('What is console.log() often used for?');
+        mainEl.children().eq(0).text('What is console.log() used for?');
         mainEl.children('ul').children('li').children().eq(0).text("Running a function.");
         mainEl.children('ul').children('li').children().eq(1).text("Generating outlines.");
-        mainEl.children('ul').children('li').children().eq(2).text("Testing your code.");
+        mainEl.children('ul').children('li').children().eq(2).text("Logging a variable in the developer console.");
         mainEl.children('ul').children('li').children().eq(3).text("Setting variable values.");
         mainEl.children('ul').children('li').children().eq(3).val('1')
         mainEl.children('ul').children('li').children().eq(2).val('3')
@@ -129,6 +129,7 @@ function questionNext() {
     questionNum++
     if (buttonValue == 3) {
         isAnswer.text('Right!');
+        isAnswer.attr('style', 'color:green;');
         score += 10;
         addChoices = true; 
         if (questionNum === 10) {
@@ -138,6 +139,7 @@ function questionNext() {
     } else {
         timeLeft -= 5;
         isAnswer.text('Wrong!');
+        isAnswer.attr('style', 'color:red;');
         addChoices = true;
         if (questionNum === 10) {
             displayScore()
@@ -209,7 +211,7 @@ function resetQuiz() {
     isAnswer.text('');
 
     header.children().eq(0).text('View high scores');
-    header.children().eq(1).text('Time: 60');
+    header.children().eq(1).text('Time: 75');
 
     mainEl.append('<h1 class="title">JS Coding Quiz!</h1>');
     mainEl.append('<p class="body">Answer the following coding questions in the allotted time to test your knowledge and review your score on the leaderboard!</p>');
