@@ -1,6 +1,6 @@
 <h1 align="center">Javascript Quiz</h1>
 
-<p align="center">Javascript-quiz week 4 challenge<project-description></p>
+<p align="center">Javascript-quiz week 4 challenge.<project-description></p>
 
 ## Links
 
