@@ -1,0 +1,121 @@
+header {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#leaderboard {
+    color:darkseagreen;
+    background: none;
+    border: none;
+    margin: 0;
+    font-size: 25px;
+    position: relative;
+    top: 30px;
+}
+
+#timer {
+    float: right;
+    color: black;
+}
+
+main {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.title {
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+
+.body {
+    font-size: 23px;
+    width: 30%;
+    display: inline-block;
+    position: relative;
+}
+
+.start {
+    font-size: 35px;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+    padding: 20px;
+    text-align: left;
+}
+
+button {
+    background-color: darkseagreen;
+    display: block;
+    margin: auto;
+    width: auto;
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+.questionBtn {
+    font-size: 45px;
+    width: 30%;
+    text-align: left;
+}
+
+#footer {
+    text-align: center;
+    font-style: italic;
+    opacity: 60%;
+    font-size: 25px;
+}
+
+#initial {
+    position: relative;
+    width: 3%;
+    font-size: 20px;
+    margin-left: 10px;
+    bottom: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#submit {
+    font-size: 25px;
+}
+
+.back,
+.clear {
+    position: relative;
+    font-size: 25px;
+}
+
+.back {
+    right: 130px;
+    top: 35px;
+}
+
+.clear {
+    left: 55px;
+}
+
+@media (max-width: 1000px) {
+    header,
+    #leaderboard,
+    .body,
+    #footer,
+    #initial,
+    .questionBtn{
+        font-size: 15px;
+    }
+    .title{
+        font-size: 30px;
+        padding-top: 30px;
+    }
+    #initial{
+        width: 10%;
+    }
+    .questionBtn{
+        width: 70%;
+    }
+}
