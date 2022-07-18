@@ -1,3 +1,8 @@
+body {
+    background-image: url("../images/stardust.png");
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 header {
     font-size: 25px;
     font-weight: bold;
@@ -11,6 +16,7 @@ header {
     font-size: 25px;
     position: relative;
     top: 30px;
+    text-shadow: 1px 1px black;
 }
 
 #timer {
@@ -26,6 +32,7 @@ main {
 .title {
     font-size: 60px;
     padding-bottom: 10px;
+    text-shadow: 1px 1px black;
 }
 
 .body {
@@ -33,6 +40,7 @@ main {
     width: 30%;
     display: inline-block;
     position: relative;
+    text-shadow: 1px 1px black;
 }
 
 .start {
@@ -51,6 +59,7 @@ button {
     display: block;
     margin: auto;
     width: auto;
+    text-shadow: 1px 1px azure;
 }
 
 button:hover {
@@ -59,7 +68,7 @@ button:hover {
 
 .questionBtn {
     font-size: 45px;
-    width: 30%;
+    width: 40%;
     text-align: left;
 }
 
@@ -67,7 +76,9 @@ button:hover {
     text-align: center;
     font-style: italic;
     opacity: 60%;
-    font-size: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 3px 3px black;
 }
 
 #initial {

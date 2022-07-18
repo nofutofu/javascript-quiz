@@ -60,7 +60,7 @@ function startQuiz() {
         mainEl.children().eq(0).text('What is console.log() used for?');
         mainEl.children('ul').children('li').children().eq(0).text("Running a function.");
         mainEl.children('ul').children('li').children().eq(1).text("Generating outlines.");
-        mainEl.children('ul').children('li').children().eq(2).text("Logging a variable in the developer console.");
+        mainEl.children('ul').children('li').children().eq(2).text("Logging variables in the console.");
         mainEl.children('ul').children('li').children().eq(3).text("Setting variable values.");
         mainEl.children('ul').children('li').children().eq(3).val('1')
         mainEl.children('ul').children('li').children().eq(2).val('3')
@@ -81,7 +81,7 @@ function startQuiz() {
         mainEl.children('ul').children('li').children().eq(2).val('1')
         mainEl.children('ul').children('li').children().eq(3).val('3')
         addChoices = false;
-    }else if (questionNum === 7 && addChoices === true) {
+    }else if (questionNum === 6 && addChoices === true) {
         mainEl.children().eq(0).text('Which of the following can only hold true or false values?');
         mainEl.children('ul').children('li').children().eq(0).text("While Loop");
         mainEl.children('ul').children('li').children().eq(1).text("Boolean");
@@ -90,7 +90,7 @@ function startQuiz() {
         mainEl.children('ul').children('li').children().eq(3).val('1')
         mainEl.children('ul').children('li').children().eq(1).val('3')
         addChoices = false;
-    }else if (questionNum === 6 && addChoices === true) {
+    }else if (questionNum === 7 && addChoices === true) {
         mainEl.children().eq(0).text('Which of the following is a string?');
         mainEl.children('ul').children('li').children().eq(0).text("'Thirty'");
         mainEl.children('ul').children('li').children().eq(1).text("'30'");
@@ -109,7 +109,7 @@ function startQuiz() {
         mainEl.children('ul').children('li').children().eq(2).val('3')
         addChoices = false;
     }else if (questionNum === 9 && addChoices === true) {
-        mainEl.children().eq(0).text('How do you pull a class from your html using jquery?');
+        mainEl.children().eq(0).text('What is the code to pull a class from the html using jquery?');
         mainEl.children('ul').children('li').children().eq(0).text("$('.classname')");
         mainEl.children('ul').children('li').children().eq(1).text("$('#classname')");
         mainEl.children('ul').children('li').children().eq(2).text("$('classname')");
@@ -136,7 +136,7 @@ function questionNext() {
             displayScore()
         }else
         { startQuiz() }
-    } else {
+    } else if (buttonValue == 1) {
         timeLeft -= 5;
         isAnswer.text('Wrong!');
         isAnswer.attr('style', 'color:red;');
