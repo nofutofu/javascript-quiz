@@ -242,10 +242,10 @@ function leaderBoard() {
     mainEl.children().children('button').remove();
     mainEl.children().eq(0).append("<button class=back>Back</button>");
     mainEl.children().eq(0).append("<button class=clear>Clear Leaderboard</button>");
-    mainEl.children().eq(1).attr('style', 'color:azure; background-color:lightslategray; padding:10px; font-size:25px; font-weight:bold; width:17%; line-height:50pt; margin:auto;');
+    mainEl.children().eq(1).attr('style', 'color:azure; background-image:none; background-color:lightslategray; padding:10px; font-size:25px; font-weight:bold; width:17%; line-height:50pt; margin:auto;');
     var x = window.matchMedia("(max-width: 700px)");
     if (x.matches) {
-        mainEl.children().eq(1).attr('style', 'color:azure; background-color:lightslategray; padding:10px; font-size:25px; font-weight:bold; width:45%; line-height:50pt; margin:auto;');
+        mainEl.children().eq(1).attr('style', 'color:azure; background-image:none; background-color:lightslategray; padding:10px; font-size:25px; font-weight:bold; width:45%; line-height:50pt; margin:auto;');
     }
     let clearBtn = $('.clear');
     let backBtn = $('.back');

@@ -9,6 +9,7 @@ header {
 }
 
 #leaderboard {
+    background-image: none;
     color:darkseagreen;
     background: none;
     border: none;
@@ -55,6 +56,7 @@ li {
 }
 
 button {
+    background-image: none;
     background-color: darkseagreen;
     display: block;
     margin: auto;
@@ -82,6 +84,7 @@ button:hover {
 }
 
 #initial {
+    background-image: none;
     position: relative;
     width: 3%;
     font-size: 20px;
